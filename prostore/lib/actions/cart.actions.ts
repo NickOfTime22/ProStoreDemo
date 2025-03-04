@@ -48,7 +48,7 @@ export async function addItemToCart(data: CartItem) {
     if (!product) throw new Error("Product not found");
 
     if (!cart) {
-      // Create new cart object
+      // Create new cart object, DOES THIS NEED STOCK CHECK?
       const newCart = insertCartSchema.parse({
         userId: userId,
         items: [item],
