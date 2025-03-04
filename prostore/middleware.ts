@@ -1,8 +1,4 @@
-export { auth as middleware } from "@/auth";
+import NextAuth from "next-auth";
+import { authConfig } from "./auth.config";
 
-export const config = {
-  unstable_allowDynamic: [
-    "**/node_modules/@auth/prisma-adapter/**",
-    "**/node_modules/**prisma**/**",
-  ],
-};
+export const { auth: middleware } = NextAuth(authConfig);
