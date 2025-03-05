@@ -16,3 +16,11 @@ export const signUpDefaultValues = {
   password: "",
   confirmPassword: "",
 };
+
+export const shippingAddressDefaultValues = {
+  fullName: "Bob burger",
+  streetAddress: "The wharf",
+  city: "Coastal City",
+  postalCode: "11111",
+  country: "Maine",
+};
