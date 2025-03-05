@@ -18,9 +18,9 @@ export const signUpDefaultValues = {
 };
 
 export const shippingAddressDefaultValues = {
-  fullName: "Bob burger",
-  streetAddress: "The wharf",
-  city: "Coastal City",
-  postalCode: "11111",
-  country: "Maine",
+  fullName: "",
+  streetAddress: "",
+  city: "",
+  postalCode: "",
+  country: "",
 };
